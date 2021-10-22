@@ -1,0 +1,22 @@
+[package]
+name = "ecosystem-template"
+version = "0.0.1"
+authors = ["Acala Developers"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0.101", optional = true }
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false }
+sp-runtime = { version = "3.0.0", default-features = false }
+frame-support = { version = "3.0.0", default-features = false }
+frame-system = { version = "3.0.0", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"serde",
+	"codec/std",
+	"sp-runtime/std",
+	"frame-support/std",
+	"frame-system/std",
+]
