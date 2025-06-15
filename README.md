@@ -1,1 +1,1 @@
-# ecosystem-template
+# ecosystem
